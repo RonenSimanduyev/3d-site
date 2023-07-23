@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.scroll-snap-y {
+  scroll-snap-type: y mandatory;
+}
+.scrollbar-none{
+}
+
