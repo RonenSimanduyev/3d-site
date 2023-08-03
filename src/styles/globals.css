@@ -35,9 +35,30 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px white;
   position: relative;
-  font-family: Roboto,sans-serif;
-
-  /* Media query for smaller screens */
-
+  font-family: Roboto, sans-serif;
 }
 
+.liclass::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: pink;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.liclass:hover::after {
+  animation:moveText 1s linear both;
+}
+
+.liclass.active::after {
+  width: 100%;
+}
+
+@keyframes moveText {
+  to {
+    width: 100%;
+  }
+}
