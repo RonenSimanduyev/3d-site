@@ -20,8 +20,8 @@ export const Hero = () => {
                 {/* right side */}
                 <div className="flex basis-1/2 relative">
                     <img
-                        src="/moon.png"
-                        alt="moon"
+                        src="/Programmer-Illustration.png"
+                        alt="programer"
                         className="w-[800px] h-[600px] object-contain  animate-bounce-alternate"
                     />
                 </div>

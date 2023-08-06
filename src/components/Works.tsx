@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const Works = () => {
-    const data = ["Front End", "Web Development", "Where Design", "Becomes Reality"];
+    const data = ["Front End", "Web Development", "Where Design", "Comes To Life"];
     const [hoveredItem, setHoveredItem] = useState("");
 
     return (
