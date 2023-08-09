@@ -17,15 +17,9 @@ export const Contact = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        console.log('Service ID:', serviceId);
-        console.log('Template ID:', templateId);
-        console.log('Public Key:', public_key);
-        console.log('Form Ref:', formRef.current);
-
         if (serviceId && templateId && public_key && formRef.current) {
-            // Perform your form validation here (e.g., check if all required fields are filled)
-            const isFormValid = true; // Replace with your form validation logic
-
+            // Perform your form validation here
+            const isFormValid = true;
             if (isFormValid) {
                 emailjs
                     .sendForm(serviceId, templateId, formRef.current, public_key)

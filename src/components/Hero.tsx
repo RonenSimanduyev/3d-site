@@ -1,5 +1,11 @@
 import { NavBar } from "@/components/NavBar";
 import Image from "next/image";
+import {
+    MeshDistortMaterial,
+    OrbitControls,
+    Sphere,
+} from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 export const Hero = () => {
     return (
@@ -14,18 +20,34 @@ export const Hero = () => {
                         <h4 className="text-[#da4ea2]">what can I do?</h4>
                     </div>
 
-                    <p className="text-[24px] text-gray-200 ">Short description about me</p>
+                    <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I have been a FullStack developer for nearly 2 years. I am looking for an opportunity to specialize in FrontEnd development</p>
                     <button className='bg-[#da4ea2] font-semibold  py-2 px-4 rounded-2xl' >hire me</button>
                 </div>
                 {/* right side */}
                 <div className="flex basis-1/2 relative">
-                    <img
-                        src="/Programmer-Illustration.png"
-                        alt="programer"
-                        className="w-[800px] h-[600px] object-contain  animate-bounce-alternate"
-                    />
+                    <div className='z-10 w-[800px] h-[600px] flex justify-center items-center'>
+                        <img
+                            src="/Programmer-Illustration.png"
+                            alt="programer"
+                            className="w-[600px] h-[400px] object-contain animate-bounce-alternate"
+                        />
+                    </div>
+                    <div className='absolute top-0 left-[-100px]'>
+                        <Canvas>
+                            <OrbitControls enableZoom={false} autoRotate />
+                            <ambientLight intensity={1}/>
+                            <directionalLight position={[3, 2, 1]} />
+                            <Sphere args={[1, 200, 400]} scale={2.7} >
+                                <MeshDistortMaterial color={'#877ef8'} attach='material' distort={0.5} speed={2} />
+                            </Sphere>
+                        </Canvas>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     );
 };
+
+

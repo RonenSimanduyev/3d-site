@@ -10,7 +10,7 @@ export const Works = () => {
                 {/*left side*/}
                 <div className="items-center flex basis-1/2">
                     <ul className="flex flex-col gap-[20px]">
-                        {data.map((item) => (
+                        {data.map((item :string) => (
                             <li
                                 className="liclass"
                                 key={item}

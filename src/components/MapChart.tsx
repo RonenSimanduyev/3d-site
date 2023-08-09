@@ -12,9 +12,9 @@ export const MapChart = () => {
         <ComposableMap
             projection="geoAzimuthalEqualArea"
             projectionConfig={{
-                rotate: [-50.0, -42.0, 0],
+                rotate: [-41.0, -35.0, 0],
                 center: [-5, -3],
-                scale: 800
+                scale: 2000
             }}
         >
             <Geographies
@@ -35,7 +35,7 @@ export const MapChart = () => {
                 dy={30}
                 connectorProps={{
                     stroke: "#da4ea2",
-                    strokeWidth: 6,
+                    strokeWidth: 4,
                     strokeLinecap: "round"
                 }}
             >
