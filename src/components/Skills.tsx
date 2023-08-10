@@ -13,7 +13,7 @@ export const Skills = () => {
         { name: 'HTML5', imageSrc: '/Skills/html5.svg' },
         { name: 'Node.js', imageSrc: '/Skills/node-js.png' },
         { name: 'TypeScript', imageSrc: './Skills/typescript.svg' },
-        { name: 'React', imageSrc: '/Skills/React.png' },
+        { name: 'React', imageSrc: '/Skills/react.svg' },
         {name:'Redux' ,imageSrc:'/Skills/reduxLogo.png'},
         { name: 'WordPress', imageSrc: '/Skills/wordpress.png' },
         { name: 'GitHub', imageSrc: '/Skills/github.png' },
