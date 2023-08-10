@@ -18,7 +18,7 @@ export const Skills = () => {
         { name: 'WordPress', imageSrc: '/Skills/wordpress.png' },
         { name: 'GitHub', imageSrc: '/Skills/github.png' },
         { name: 'Python', imageSrc: '/Skills/python.png' },
-        { name: 'AWS', imageSrc: '/Skills/awsicon.png' },
+        { name: 'AWS', imageSrc: '/Skills/awsLogo.svg' },
         { name: 'Vercel', imageSrc: '/Skills/vercel.svg' },
     ];
 
