@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavBar = () => {
     return (
@@ -6,21 +7,30 @@ export const NavBar = () => {
             <div className='w-[1400px] flex justify-between items-center py-3'>
                 {/*links*/}
                 <div className="flex text-center gap-10 cursor-pointer">
-                    <Image src='/logo.png' alt='search icon' width={100} height={150} />
+                    <Image src='/RonenLogo.png' alt='search icon' width={280} height={200} />
 
                     <ul className="flex text-center gap-10 items-center">
-                        <li>Home</li>
-                        <li>Studio</li>
-                        <li>Works</li>
-                        <li>Contact</li>
+                        <li>
+                            <Link href="#home">
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#skills">
+                                Skills
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#demonstration">
+                             Demonstration
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#contact">
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
-                </div>
-                {/*icons*/}
-                <div className="flex items-center gap-2">
-                    <Image src='/search.png' alt='search icon' width={20} height={20} />
-                    <button className="bg-[#da43a2] p-1 rounded-xl w-[100px]">
-                        click me
-                    </button>
                 </div>
             </div>
         </nav>

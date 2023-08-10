@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 
 export const Hero = () => {
     return (
-        <div className="h-[100vh] snap-center flex flex-col items-center">
+        <div className="h-[100vh] snap-center flex flex-col items-center" id="home" >
             <NavBar />
             <div className="w-[1400px] flex flex-col md:flex-row justify-between items-center">
                 {/* left side */}
@@ -17,11 +17,11 @@ export const Hero = () => {
                     <h1 className="text-[70px]">Your.  perfect.  Website.</h1>
                     <div className="flex items-center gap-4 " >
                         <img src='./line.png' alt='line' className='h-[5px]  '/>
-                        <h4 className="text-[#da4ea2]">what can I do?</h4>
+                        <h4 className="text-[#da4ea2]">Who am I?</h4>
                     </div>
 
                     <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I have been a FullStack developer for nearly 2 years. I am looking for an opportunity to specialize in FrontEnd development</p>
-                    <button className='bg-[#da4ea2] font-semibold  py-2 px-4 rounded-2xl' >hire me</button>
+                    <button className='bg-[#da4ea2] font-semibold my-5 py-2 px-4 rounded-2xl' >hire me</button>
                 </div>
                 {/* right side */}
                 <div className="flex basis-1/2 relative">
@@ -32,7 +32,7 @@ export const Hero = () => {
                             className="w-[600px] h-[400px] object-contain animate-bounce-alternate"
                         />
                     </div>
-                    <div className='absolute top-0 left-[-100px]'>
+                    <div className='absolute top-0 left-0 w-[800px] h-[600px]'>
                         <Canvas>
                             <OrbitControls enableZoom={false} autoRotate />
                             <ambientLight intensity={1}/>
@@ -43,8 +43,6 @@ export const Hero = () => {
                         </Canvas>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

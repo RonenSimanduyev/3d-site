@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import {NavBar} from "@/components/NavBar";
 
 interface Technology {
     name: string;
@@ -13,7 +14,7 @@ export const Skills = () => {
         { name: 'Node.js', imageSrc: '/Skills/node-js.png' },
         { name: 'TypeScript', imageSrc: './Skills/typescript.svg' },
         { name: 'React', imageSrc: '/Skills/React.png' },
-        { name: 'Redux', imageSrc: '/Skills/reduxIcon.png' },
+        {name:'Redux' ,imageSrc:'/Skills/reduxLogo.png'},
         { name: 'WordPress', imageSrc: '/Skills/wordpress.png' },
         { name: 'GitHub', imageSrc: '/Skills/github.png' },
         { name: 'Python', imageSrc: '/Skills/python.png' },
@@ -22,7 +23,8 @@ export const Skills = () => {
     ];
 
     return (
-        <div className="h-[100vh] snap-center flex flex-col items-center">
+        <div className="h-[100vh] snap-center flex flex-col items-center" id="skills" >
+
             <div className="w-[1400px] mt-[5%]">
 
                 <h1 className="text-[70px] text-center mb-5">My Set Of Skills</h1>
@@ -40,7 +42,7 @@ export const Skills = () => {
                                 width={110}
                                 height={110}
                             />
-                            <div className="absolute inset-0 flex items-baseline justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-60 text-white font-bold text-3xl">
+                            <div className="absolute inset-0 flex items-baseline justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-40 text-white font-bold text-3xl">
                                 {tech.name}
                             </div>
                         </div>

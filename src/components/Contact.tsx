@@ -42,7 +42,7 @@ export const Contact = () => {
     };
 
     return (
-        <div className="h-[100vh] snap-center flex justify-center">
+        <div className="h-[100vh] snap-center flex justify-center " id="contact" >
             <div className="w-[100%] flex justify-between gap-[50px]">
                 {/*left side*/}
                 <div className="justify-center flex basis-1/2 items-center">
