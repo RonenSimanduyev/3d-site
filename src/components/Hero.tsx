@@ -17,7 +17,7 @@ export const Hero = () => {
                 <div className=" basis-1/3 flex-col items-center gap-3">
                     <h1 className="text-[70px]">Your.  perfect.  Website.</h1>
                     <div className="flex items-center gap-4 " >
-                        <img src='./line.png' alt='line' className='h-[5px]  '/>
+                        <Image src='/line.png' alt='line' width={20} height={5} className='h-[5px]'/>
                         <h4 className="text-[#da4ea2]">Who am I?</h4>
                     </div>
 
