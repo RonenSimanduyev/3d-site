@@ -1,4 +1,5 @@
 import { NavBar } from "@/components/NavBar";
+import Link from "next/link";
 import Image from "next/image";
 import {
     MeshDistortMaterial,
@@ -21,14 +22,19 @@ export const Hero = () => {
                     </div>
 
                     <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I have been a FullStack developer for nearly 2 years. I am looking for an opportunity to specialize in FrontEnd development</p>
-                    <button className='bg-[#da4ea2] font-semibold my-5 py-2 px-4 rounded-2xl' >hire me</button>
+                    <Link href="#contact">
+                        <button className='bg-[#da4ea2] font-semibold my-5 py-2 px-4 rounded-2xl w-[150px]' >Hire Me</button>
+                    </Link>
+
                 </div>
                 {/* right side */}
                 <div className="flex basis-1/2 relative">
                     <div className='z-10 w-[800px] h-[600px] flex justify-center items-center'>
-                        <img
+                        <Image
                             src="/Programmer-Illustration.png"
                             alt="programer"
+                            width={600}
+                            height={400}
                             className="w-[600px] h-[400px] object-contain animate-bounce-alternate"
                         />
                     </div>
