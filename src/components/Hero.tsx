@@ -21,7 +21,7 @@ export const Hero = () => {
                         <h4 className="text-[#da4ea2]">Who am I?</h4>
                     </div>
 
-                    <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I have been a FullStack developer for nearly 2 years. I am looking for an opportunity to specialize in FrontEnd development</p>
+                    <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I am a FullStack developer specialize in FrontEnd development</p>
                     <Link href="#contact">
                         <button className='bg-[#da4ea2] font-semibold my-5 py-2 px-4 rounded-2xl w-[150px]' >Hire Me</button>
                     </Link>
