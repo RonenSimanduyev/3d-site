@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+//@ts-ignore
 import Cookies from 'js-cookie';
 import { MapChart } from '@/components/MapChart';
 
