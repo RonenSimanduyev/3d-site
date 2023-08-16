@@ -27,14 +27,14 @@ export const Skills = () => {
 
             <div className="w-[1400px] mt-[5%]">
 
-                <h1 className="text-[70px] text-center mb-5">My Set Of Skills</h1>
+                <h1 className="text-[70px] text-center mb-5">My Skills</h1>
 
                 <div className='grid grid-cols-4 gap-5'>
 
                     {technologies.map((tech:Technology, index:number) => (
                         <div
                             key={index}
-                            className='grid place-items-center my-[5%] relative transition-transform duration-300 hover:scale-110 hover:shadow-md'
+                            className='  grid place-items-center my-[5%] relative transition-transform duration-300 hover:scale-110 hover:shadow-md'
                         >
                             <Image
                                 src={tech.imageSrc}
@@ -42,7 +42,7 @@ export const Skills = () => {
                                 width={110}
                                 height={110}
                             />
-                            <div className="absolute inset-0 flex items-baseline justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-40 text-white font-bold text-3xl">
+                            <div className="absolute  inset-0 cursor-not-allowed flex items-baseline justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-black bg-opacity-40 text-white font-bold text-3xl">
                                 {tech.name}
                             </div>
                         </div>

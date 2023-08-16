@@ -15,10 +15,10 @@ export const Hero = () => {
             <div className="w-[1400px] flex flex-col md:flex-row justify-between items-center">
                 {/* left side */}
                 <div className=" basis-1/3 flex-col items-center gap-3">
-                    <h1 className="text-[70px]">Your.  perfect.  Website.</h1>
+                    <h1 className="text-[64px]"> Build Your.  perfect.  Website.</h1>
                     <div className="flex items-center gap-4 " >
                         <Image src='/line.png' alt='line' width={20} height={5} className='h-[5px]'/>
-                        <h4 className="text-[#da4ea2]">Who am I?</h4>
+                        <h4 className="text-[#da4ea2] text-2xl">Who am I?</h4>
                     </div>
 
                     <p className="text-[20px] text-gray-200 ">Hey my name is Ronen Simanduyev and I am a FullStack developer specialize in FrontEnd development</p>
